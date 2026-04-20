@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard - Users</title>
+        <meta
+            name="description"
+            content="Browse modern website templates and UI designs. CloneSites helps you build clean, fast websites with ready-to-use layouts."
+        />
+        <meta
+            name="keywords"
+            content="website templates, UI design, frontend templates, clone websites, HTML CSS templates"
+        />
+        <meta name="author" content="CloneSites" />
+
+        <meta
+            property="og:title"
+            content="CloneSites - Free Website Templates"
+        />
+        <meta
+            property="og:description"
+            content="Discover clean and modern website templates to speed up your development."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://example.com" />
+        <meta
+            property="og:image"
+            content="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/Screenshot%202026-04-17%20160954.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="CloneSites - Free Website Templates"
+        />
+        <meta
+            name="twitter:description"
+            content="Clean UI templates to build faster."
+        />
+        <meta
+            name="twitter:image"
+            content="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/Screenshot%202026-04-17%20160954.jpg"
+        />
+
+        <link
+            rel="shortcut icon"
+            href="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/favicon.svg"
+            type="image/x-icon"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+    <body>
+        <header>
+            <nav
+                class="fixed top-0 z-50 w-full bg-white dark:bg-neutral-900 border-b border-gray-200 dark:border-gray-700"
+            >
+                <div class="px-3 py-3 lg:px-5 lg:pl-3">
+                    <div class="flex items-center justify-between">
+                        <div
+                            class="flex items-center justify-start rtl:justify-end"
+                        >
+                            <button
+                                data-drawer-target="top-bar-sidebar"
+                                data-drawer-toggle="top-bar-sidebar"
+                                aria-controls="top-bar-sidebar"
+                                type="button"
+                                class="sm:hidden text-gray-900 bg-transparent box-border border border-transparent hover:bg-gray-50 focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-2xl text-sm p-2 focus:outline-none"
+                            >
+                                <span class="sr-only">Open sidebar</span>
+                                <svg
+                                    class="w-6 h-6"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-width="2"
+                                        d="M5 7h14M5 12h14M5 17h10"
+                                    />
+                                </svg>
+                            </button>
+                            <a href="index.html" class="flex">
+                                <svg
+                                    class="w-7 dark:fill-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"
+                                >
+                                    <path
+                                        d="M372.2 116C372.2 136.9 359.8 155 342 163.2L448 256L550.2 235.6L552.4 235.2C547.1 227.5 544 218.1 544 208.1C544 181.6 565.5 160.1 592 160.1C618.5 160.1 640 181.6 640 208.1C640 234.1 619.4 255.2 593.6 256.1L583.8 277.8L481 506.3C470.7 529.3 447.8 544 422.6 544L217.4 544C192.2 544 169.4 529.2 159 506.3L56.2 277.8L46.4 256C20.6 255.1 0 234 0 208C0 181.5 21.5 160 48 160C74.5 160 96 181.5 96 208C96 218.1 92.9 227.4 87.6 235.1L89.8 235.5L192 255.9L298.1 163C280.4 154.7 268.1 136.7 268.1 115.9C268.1 87.2 291.4 63.9 320.1 63.9C348.8 63.9 372.1 87.2 372.1 115.9zM416.4 292.1L320 207.8L223.6 292.1C212.4 301.9 197.2 306 182.6 303L114 289.4L202.8 486.6C205.4 492.3 211.1 496 217.4 496L422.6 496C428.9 496 434.6 492.3 437.2 486.6L525.9 289.4L457.4 303.1C442.8 306 427.6 302 416.4 292.2z"
+                                    />
+                                </svg>
+                                <span
+                                    class="self-center text-xl text-gray-900 dark:text-white font-semibold whitespace-nowrap"
+                                    >CloneSites</span
+                                >
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center ms-3">
+                                <div>
+                                    <button
+                                        type="button"
+                                        class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                        aria-expanded="false"
+                                        data-dropdown-toggle="dropdown-user"
+                                    >
+                                        <span class="sr-only"
+                                            >Open user menu</span
+                                        >
+                                        <img
+                                            class="w-8 h-8 rounded-full"
+                                            src="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/selfie1.jpg"
+                                            alt="user photo"
+                                        />
+                                    </button>
+                                </div>
+                                <div
+                                    class="z-50 hidden bg-white dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg w-44"
+                                    id="dropdown-user"
+                                >
+                                    <div
+                                        class="px-4 py-3 border-b border-gray-200 dark:border-gray-700"
+                                        role="none"
+                                    >
+                                        <p
+                                            class="text-sm font-medium text-gray-900 dark:text-white"
+                                            role="none"
+                                        >
+                                            Virakboth Soth
+                                        </p>
+                                        <p
+                                            class="text-sm text-gray-600 dark:text-white truncate"
+                                            role="none"
+                                        >
+                                            vkkh@abc.de
+                                        </p>
+                                    </div>
+                                    <ul
+                                        class="p-2 text-sm text-gray-600 dark:text-white font-medium"
+                                        role="none"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="dropdown-link"
+                                                role="menuitem"
+                                                >Dashboard</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="index.html"
+                                                class="dropdown-link"
+                                                role="menuitem"
+                                                >Sign out</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <aside
+            id="top-bar-sidebar"
+            class="fixed top-0 left-0 z-40 w-64 h-full transition-transform -translate-x-full sm:translate-x-0"
+            aria-label="Sidebar"
+        >
+            <div
+                class="h-full px-3 py-4 overflow-y-auto bg-white dark:bg-neutral-900 border-e border-gray-200 dark:border-gray-700"
+            >
+                <a
+                    href="https://flowbite.com/"
+                    class="flex items-center ps-2.5 mb-5"
+                >
+                    <img
+                        src="https://flowbite.com/docs/images/logo.svg"
+                        class="h-6 me-3"
+                        alt="Flowbite Logo"
+                    />
+                    <span
+                        class="self-center text-lg text-gray-900 font-semibold whitespace-nowrap"
+                        >Flowbite</span
+                    >
+                </a>
+                <ul class="space-y-2 font-medium">
+                    <li>
+                        <a href="dashboard_index.html" class="aside-link">
+                            <svg
+                                class="w-5 h-5 transition duration-75 group-hover:text-brand-strong"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10 6.025A7.5 7.5 0 1 0 17.975 14H10V6.025Z"
+                                />
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13.5 3c-.169 0-.334.014-.5.025V11h7.975c.011-.166.025-.331.025-.5A7.5 7.5 0 0 0 13.5 3Z"
+                                />
+                            </svg>
+                            <span class="ms-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard_inbox.html" class="aside-link">
+                            <svg
+                                class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-brand-strong"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9M9 7h6m-7 3h8"
+                                />
+                            </svg>
+                            <span class="flex-1 ms-3 whitespace-nowrap"
+                                >Inbox</span
+                            >
+                            <span
+                                class="inline-flex items-center justify-center w-4.5 h-4.5 ms-2 text-xs font-medium text-fg-danger-strong dark:text-white bg-danger-soft dark:bg-neutral-600 border border-danger-subtle dark:border-neutral-500 rounded-full"
+                                >2</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="dashboard_users.html"
+                            class="aside-link-active"
+                        >
+                            <svg
+                                class="shrink-0 w-5 h-5 transition duration-75 group-hover:text-brand-strong"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-width="2"
+                                    d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                                />
+                            </svg>
+                            <span class="flex-1 ms-3 whitespace-nowrap"
+                                >Users</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="p-0 md:p-4 sm:ml-40 lg:ml-64 mt-14 flex flex-col gap-8">
+            <div class="p-4">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white">
+                    Users
+                </h2>
+                <div
+                    class="relative overflow-x-auto bg-white dark:bg-neutral-900 shadow-xs rounded-2xl border border-gray-200 dark:border-neutral-800"
+                >
+                    <div
+                        class="flex items-center justify-between flex-column flex-wrap md:flex-row space-y-4 md:space-y-0 p-4"
+                    >
+                        <div>
+                            <button
+                                id="dropdownDefaultButton"
+                                data-dropdown-toggle="dropdown"
+                                class="inline-flex items-center justify-center text-gray-600 dark:text-white bg-gray-50 dark:bg-neutral-700 box-border border border-gray-200 dark:border-neutral-600 hover:bg-gray-100-medium dark:hover:bg-neutral-600 hover:text-gray-900 focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-2xl text-sm px-3 py-2 focus:outline-none"
+                                type="button"
+                            >
+                                Action
+                                <svg
+                                    class="w-4 h-4 ms-1.5 -me-0.5"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m19 9-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div
+                                id="dropdown"
+                                class="z-10 hidden bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-2xl shadow-lg w-32"
+                            >
+                                <ul
+                                    class="p-2 text-sm text-gray-600 dark:text-neutral-400 font-medium"
+                                    aria-labelledby="dropdownDefaultButton"
+                                >
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center w-full p-2 hover:bg-gray-100-medium dark:hover:bg-neutral-800 hover:text-gray-900 dark:hover:text-white rounded"
+                                            >Reward</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center w-full p-2 hover:bg-gray-100-medium dark:hover:bg-neutral-800 hover:text-gray-900 dark:hover:text-white rounded"
+                                            >Promote</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center w-full p-2 hover:bg-gray-100-medium dark:hover:bg-neutral-800 hover:text-gray-900 dark:hover:text-white rounded"
+                                            >Archive</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex items-center w-full p-2 text-fg-danger hover:bg-gray-100-medium rounded"
+                                            >Delete</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <label for="input-group-1" class="sr-only"
+                            >Search</label
+                        >
+                        <div class="relative">
+                            <div
+                                class="absolute inset-y-0 inset-s-0 flex items-center ps-3 pointer-events-none"
+                            >
+                                <svg
+                                    class="w-4 h-4 text-gray-600"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-width="2"
+                                        d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                                    />
+                                </svg>
+                            </div>
+                            <input
+                                type="text"
+                                id="input-group-1"
+                                class="block w-full max-w-96 ps-9 pe-3 py-2 bg-gray-50 dark:bg-neutral-700 border border-gray-200 dark:border-neutral-600 text-gray-900 dark:text-white text-sm rounded-2xl focus:ring-brand focus:border-brand shadow-xs placeholder:text-gray-600 dark:placeholder:text-neutral-400"
+                                placeholder="Search"
+                            />
+                        </div>
+                    </div>
+                    <table
+                        class="w-full text-sm text-left rtl:text-right text-gray-600"
+                    >
+                        <thead
+                            class="text-sm text-gray-600 dark:text-white bg-gray-50 dark:bg-neutral-800 border-b border-t border-gray-200 dark:border-neutral-700"
+                        >
+                            <tr>
+                                <th scope="col" class="p-4">
+                                    <div class="flex items-center">
+                                        <input
+                                            id="table-checkbox-45"
+                                            type="checkbox"
+                                            value=""
+                                            class="table-item-row-checkbox"
+                                        />
+                                        <label
+                                            for="table-checkbox-45"
+                                            class="sr-only"
+                                            >Table checkbox</label
+                                        >
+                                    </div>
+                                </th>
+                                <th scope="col" class="px-6 py-3 font-medium">
+                                    Name
+                                </th>
+                                <th scope="col" class="px-6 py-3 font-medium">
+                                    Position
+                                </th>
+                                <th scope="col" class="px-6 py-3 font-medium">
+                                    Status
+                                </th>
+                                <th scope="col" class="px-6 py-3 font-medium">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-item-row">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input
+                                            id="table-checkbox-46"
+                                            type="checkbox"
+                                            value=""
+                                            class="table-item-row-checkbox"
+                                        />
+                                        <label
+                                            for="table-checkbox-46"
+                                            class="sr-only"
+                                            >Table checkbox</label
+                                        >
+                                    </div>
+                                </td>
+                                <th
+                                    scope="row"
+                                    class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap"
+                                >
+                                    <img
+                                        class="w-10 h-10 rounded-full"
+                                        src="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/selfie1.jpg"
+                                        alt="Jese image"
+                                    />
+                                    <div class="ps-3">
+                                        <div
+                                            class="text-base dark:text-white font-semibold"
+                                        >
+                                            Virakboth Soth
+                                        </div>
+                                        <div
+                                            class="font-normal text-gray-600 dark:text-neutral-400"
+                                        >
+                                            vkbh@abc.de
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="table-item-row-info">
+                                    Website Developer
+                                </td>
+                                <td class="table-item-row-info">
+                                    <div class="flex items-center">
+                                        <div
+                                            class="h-2.5 w-2.5 rounded-full bg-success me-2"
+                                        ></div>
+                                        Online
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a
+                                        href="#"
+                                        class="font-medium text-blue-700 hover:underline"
+                                        >Edit user</a
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="table-item-row">
+                                <td class="w-4 p-4">
+                                    <div class="flex items-center">
+                                        <input
+                                            id="table-checkbox-47"
+                                            type="checkbox"
+                                            value=""
+                                            class="table-item-row-checkbox"
+                                        />
+                                        <label
+                                            for="table-checkbox-47"
+                                            class="sr-only"
+                                            >Table checkbox</label
+                                        >
+                                    </div>
+                                </td>
+                                <th
+                                    scope="row"
+                                    class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                                >
+                                    <img
+                                        class="w-10 h-10 rounded-full"
+                                        src="https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/dad.jpg"
+                                        alt="Jese image"
+                                    />
+                                    <div class="ps-3">
+                                        <div
+                                            class="text-base dark:text-white font-semibold"
+                                        >
+                                            Virak Soth
+                                        </div>
+                                        <div
+                                            class="font-normal text-gray-600 dark:text-neutral-400"
+                                        >
+                                            dad@mail.com
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="table-item-row-info">My Dad</td>
+                                <td class="table-item-row-info">
+                                    <div class="flex items-center">
+                                        <div
+                                            class="h-2.5 w-2.5 rounded-full bg-danger me-2"
+                                        ></div>
+                                        Offline
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a
+                                        href="#"
+                                        class="font-medium text-blue-700 hover:underline"
+                                        >Edit user</a
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    </body>
+</html>

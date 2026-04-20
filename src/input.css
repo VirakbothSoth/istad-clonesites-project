@@ -1,0 +1,156 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+/* Custom theme extensions */
+@theme {
+    --font-oxygen: "Oxygen", sans-serif;
+}
+
+/* Base styles */
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Component classes using @apply */
+
+body {
+    @apply dark:bg-gray-950 font-oxygen scroll-smooth;
+}
+
+.nav-link {
+    @apply block py-2 px-3 rounded md:border-0 md:p-0;
+    @apply text-gray-900 dark:text-white md:hover:text-blue-700;
+    @apply hover:bg-gray-100 md:hover:bg-transparent md:dark:hover:bg-transparent;
+}
+
+.aside-link {
+    @apply flex items-center px-2 py-1.5;
+    @apply text-gray-900 dark:text-white rounded-2xl hover:text-blue-700;
+}
+
+.dropdown-link {
+    @apply inline-flex items-center w-full p-2 rounded;
+    @apply hover:text-blue-700;
+}
+
+.nav-link-active {
+    @apply block py-2 px-3 rounded md:p-0;
+    @apply text-gray-900 bg-blue-700 md:bg-transparent md:text-blue-700;
+}
+
+.aside-link-active {
+    @apply flex items-center px-2 py-1.5;
+    @apply text-blue-700 rounded-2xl;
+}
+
+.jumbotron {
+    @apply bg-[url('https://eunxwlahgeqremjyymwp.supabase.co/storage/v1/object/public/virakboth/bg.jpg')] bg-no-repeat bg-center bg-white dark:bg-dark dark:bg-blend-multiply mask-b-from-70% mask-b-to-100%;
+}
+
+.page-subtitle {
+    @apply text-3xl md:text-4xl lg:text-5xl text-center py-5 font-bold dark:text-white;
+}
+
+.template-card {
+    @apply block bg-white hover:bg-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-800;
+    @apply border border-gray-200 dark:border-neutral-800 rounded-2xl shadow-xs;
+    @apply w-full h-full flex flex-col;
+}
+
+.template-card .template-thumbnail {
+    @apply rounded-t-2xl w-full h-full mask-b-from-70% mask-b-to-100% object-cover;
+}
+
+.template-card .card-content {
+    @apply p-2 sm:p-4 text-left flex-1;
+}
+
+.template-card .card-content .card-badge {
+    @apply inline-flex items-center bg-[rgba(0,0,255,0.25)] border border-blue-200 dark:border-gray-500;
+    @apply text-blue-700 dark:text-white text-xs font-medium px-1.5 py-0.5 rounded-2xl;
+}
+
+.template-card .card-content .card-badge svg {
+    @apply fill-white w-3 h-3 me-1;
+}
+
+.template-card .card-content .card-title {
+    @apply my-3 text-lg md:text-xl lg:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-wrap text-left;
+}
+
+.template-card .card-content .card-link {
+    @apply inline-flex items-start text-white bg-blue-700 border border-transparent hover:bg-blue-700 shadow-xs font-medium leading-5 rounded-sm md:rounded-2xl text-sm p-1 sm:p-2 focus:outline-none w-full sm:w-fit;
+}
+
+.stat {
+    @apply flex flex-col h-auto w-full p-4 border border-gray-200 dark:border-neutral-800 rounded-2xl;
+    @apply bg-white dark:bg-neutral-900 hover:bg-neutral-200 dark:hover:bg-neutral-800;
+}
+
+.stat .stat-content {
+    @apply flex justify-start items-start;
+}
+
+.stat-title {
+    @apply text-sm lg:text-xl lg:text-red-500 font-bold text-gray-900 dark:text-white truncate;
+}
+
+.stat-info {
+    @apply text-xs lg:text-base text-neutral-400 dark:text-neutral-400 mb-5;
+}
+
+.stat-icon {
+    @apply fill-black dark:fill-white w-10 md:w-6 lg:w-12 shrink-0 mr-5;
+}
+
+.about-sections {
+    @apply grid grid-cols-1 place-items-center w-full md:w-6/10 mx-auto;
+}
+
+.about-sections .about-section {
+    @apply flex flex-row odd:flex-row-reverse justify-center py-16 gap-2 md:gap-16;
+}
+
+.about-sections .about-section h3 {
+    @apply text-2xl md:text-3xl font-bold text-black dark:text-white;
+}
+
+.about-sections .about-section p {
+    @apply text-sm md:text-xl font-normal text-black dark:text-white my-2 tracking-wide;
+}
+
+.about-section .about-section-content {
+    @apply flex flex-col flex-1 justify-center items-center text-white font-normal text-3xl p-5 text-center;
+}
+
+.team-profile-card {
+    @apply gap-8 place-items-center;
+}
+
+.team-profile-picture {
+    @apply size-64 border-2 border-[rgba(255,255,255,0.2)] rounded-full flex justify-center;
+}
+
+.team-profile-card h3 {
+    @apply text-4xl font-semibold text-center text-gray-900 dark:text-white;
+}
+
+.team-profile-card p {
+    @apply text-xl text-gray-400;
+}
+
+.table-item-row {
+    @apply bg-white dark:bg-neutral-900 border-b border-gray-200 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-800;
+}
+
+.table-item-row-info,
+.table-item-row-info td {
+    @apply px-6 py-4 text-gray-600 dark:text-neutral-200;
+}
+.table-item-row-checkbox {
+    @apply w-4 h-4 border border-gray-200 dark:border-neutral-700 rounded-xs bg-gray-50 dark:bg-neutral-800 focus:ring-2 focus:ring-blue-100;
+}
