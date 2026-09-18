@@ -6,9 +6,18 @@
 />
 
 at school: [ISTAD](https://istad.co) 
+
 date made/assigned: April 19, 2026
+
+technologies used: 
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,tailwind&perline=4" />
+</p>
 
 **Virakboth's Comment:**
 ---
-This was a homework that was assigned to us at ISTAD for front-end practice, I kind of messed up on using flowbite so thats why the color scheme isn't the greatest
+This was a homework that was assigned to us at [ISTAD](https://istad.co) for front-end practice, 
+
+I kind of messed up on using flowbite so thats why the color scheme isn't the greatest
+
 I didn't even go out for khmer new year because I stayed home working on this :sob:
